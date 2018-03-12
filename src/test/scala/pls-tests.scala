@@ -10,8 +10,10 @@ object TutoTest extends TestSuite {
   TutoApp.setupUI()
 
   def tests = TestSuite {
-    'HereComes {
-      assert(jQuery("p:contains('Here comes Scalajs')").length == 1)
+    'HereComesPLS {
+      val count = jQuery("h1:contains('Here comes Scalajs')").length
+      println(count)
+      assert(count == 1)
     }
 
 
@@ -19,7 +21,7 @@ object TutoTest extends TestSuite {
       def messageCount =
         jQuery(".you-clicked").length
 
-      val button = jQuery("#click-me-button:contains('Click me!')")
+      val button = jQuery("#click-me-button")
       assert(button.length == 1)
       assert(messageCount == 0)
 

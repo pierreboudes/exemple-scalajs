@@ -8,10 +8,17 @@ object TutoApp {
     jQuery("#interactive-zone").append("""<p class="you-clicked">You clicked the button!</p>""")
   }
 
+  def rien() {
+    println("tu as cliqué sur Rien mais ça ne fait rien.")
+  }
+
+
   def setupUI(): Unit = {
     jQuery("body").append("<h1>Here comes Scalajs</h1>")
     jQuery("body").append("""<div id="interactive-zone"><button id="click-me-button" type="button">Click me!</button></div>""")
     jQuery("#click-me-button").click(() => addClickedMessage())
+    jQuery("body").append("""<button id="rien" type="button">Rien</button>""")
+    jQuery("#rien").click(()=>rien())
   }
 
 
