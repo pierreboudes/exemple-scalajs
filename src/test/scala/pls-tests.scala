@@ -3,7 +3,6 @@ package fr.mipn.scalajs
 import utest._
 import org.scalajs.jquery.jQuery
 
-
 object TutoTest extends TestSuite {
 
   // Initialize App

@@ -5,7 +5,7 @@ import org.scalajs.jquery.jQuery
 object TutoApp {
 
   def addClickedMessage(): Unit = {
-    jQuery("#interactive-zone").append("""<p class="you-clicked">You clicked the button!</p>""")
+    jQuery("#interactive-zone").append("""<p class="you-clicked">Vous avez cliqué sur <em>Click-me!</em> !</p>""")
   }
 
   def rien() {
